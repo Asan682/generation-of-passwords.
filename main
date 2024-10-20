@@ -1,0 +1,18 @@
+import random
+
+glas = 'euyioaEYUIOA'
+sogl = 'qwrtpsdfghjklzxcvbnmQWRTPSDFGHHJKLZXCVBNM'
+numbers = '1234567890'
+symbols = "!@#?"
+
+password = ''
+
+for i in range(3):
+    password += random.choice(glas) + random.choice(sogl)
+
+for i in range(2):
+    password += random.choice(numbers)
+
+for i in range(2):
+    password += random.choice(symbols)
+print(password)
